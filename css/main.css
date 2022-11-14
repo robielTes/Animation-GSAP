@@ -1,0 +1,309 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+body {
+  font-family: "Roboto", "Helvetica", "Arial";
+  color: white;
+  font-size: 22px;
+  margin: 0px;
+  width: 100%; }
+
+#conteneur {
+  clear: both;
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+  border-sizing: border-box; }
+
+header {
+  background-color: #3673b0;
+  width: 100%;
+  min-height: 100px; }
+
+.navbar {
+  background-color: #3673b0;
+  height: 100px;
+  width: 100%; }
+
+.navbar-toggle {
+  top: 20px;
+  padding-bottom: 40px;
+  color: white;
+  font-size: 30px; }
+  .navbar-toggle:hover {
+    color: #dba44c; }
+
+.navbar-nav, .navbar-toggler {
+  float: right; }
+
+.collapsing {
+  width: 100%;
+  border: 0px; }
+
+.navbar-nav {
+  margin: 0px;
+  padding: 0px;
+  border: 0px; }
+
+ul {
+  border-top: 0px; }
+
+.navbar-nav > li {
+  height: 100px;
+  padding-top: 30px;
+  border: 0px;
+  background-color: #3673b0; }
+  .navbar-nav > li:hover {
+    background-color: #dba44c; }
+
+.nav-item {
+  list-style: none; }
+
+.nav-link {
+  padding: 20px;
+  color: white;
+  text-decoration: none; }
+  .nav-link:link, .nav-link:hover, .nav-link:visited, .nav-link:active {
+    color: white;
+    text-decoration: none; }
+
+.icon-bar {
+  background-color: #dba44c; }
+
+#bateau {
+  fill: #dba44c;
+  transition: all .5s ease-out; }
+
+#vagues {
+  fill: white;
+  transition: all .5s ease-out; }
+
+#logo:hover #bateau {
+  fill: white; }
+
+#logo:hover #vagues {
+  fill: #dba44c; }
+
+#slider {
+  position: relative;
+  float: none;
+  height: 600px;
+  background-image: url("../images/hero_image_1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  padding-bottom: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-sizing: border-box; }
+  #slider::before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block; }
+  #slider #titre {
+    font-family: 'Roboto Slab', arial;
+    font-size: 100px;
+    font-weight: bold;
+    color: #dba44c;
+    background-color: #3673b0;
+    padding: 0px 20px;
+    z-index: 2; }
+  #slider #titre #my {
+    font-family: 'Roboto Slab', arial;
+    color: white; }
+
+#groupe_produits {
+  box-sizing: border-box;
+  padding: 5px; }
+
+.produit {
+  box-sizing: border-box;
+  margin-top: 20px;
+  background-color: white; }
+  .produit .inside {
+    border: 1px solid #a6a6a6;
+    height: 500px; }
+    .produit .inside:hover {
+      box-shadow: 0px 0px 3px 3px silver; }
+  .produit #image_produit {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    display: block; }
+    .produit #image_produit::before {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: rgba(255, 255, 255, 0.2);
+      z-index: 0; }
+  .produit:hover #image_produit::before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0; }
+  .produit #titre_produit {
+    color: #3673b0;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px dotted #dba44c; }
+  .produit #description_produit {
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+    padding-bottom: 0px;
+    height: 160px; }
+  .produit #btn-detail {
+    cursor: pointer;
+    clear: both;
+    color: #3673b0;
+    font-size: 40px;
+    padding: 15px;
+    width: 50px; }
+    .produit #btn-detail:hover {
+      color: #dba44c; }
+
+#groupe_news_form {
+  clear: both;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 30px; }
+
+#news, #formulaire {
+  min-height: 300px;
+  margin-top: 10px;
+  padding-top: 10px;
+  display: block; }
+  #news .inside, #formulaire .inside {
+    border: 1px solid #a6a6a6;
+    min-height: 400px;
+    background-color: #fafafa; }
+  #news .inside:hover, #formulaire .inside:hover {
+    box-shadow: 0px 0px 3px 3px silver; }
+  #news #titre, #formulaire #titre {
+    color: #3673b0;
+    padding: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px dotted #dba44c; }
+  #news #description, #formulaire #description {
+    color: black;
+    font-size: 15px;
+    padding: 20px;
+    padding-bottom: 40px; }
+
+.container-form {
+  max-width: 410px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.form-control {
+  border-radius: 0px; }
+
+#contact-submit {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #3673b0;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px; }
+
+#contact button[type="submit"]:hover {
+  background-color: #dba44c; }
+
+@media screen and (max-width: 764px) {
+  #slider {
+    height: 250px;
+    padding: 0px; }
+
+  #slider #titre {
+    background-size: auto 100%;
+    margin: auto;
+    font-size: 40px; }
+
+  #groupe_produits, #groupe_news_form {
+    border: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: white; }
+
+  .produit, #news, #formulaire {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    min-height: 0px;
+    display: block; }
+
+  #image_produit {
+    height: 200px; }
+
+  .vehicules, .soldes {
+    background-color: #dba44c; }
+    .vehicules #titre_produit, .vehicules #description_produit, .soldes #titre_produit, .soldes #description_produit {
+      color: white; }
+
+  .electronique, .habits {
+    background-color: #3673b0; }
+    .electronique #titre_produit, .electronique #description_produit, .habits #titre_produit, .habits #description_produit {
+      color: white; }
+    .electronique #btn-detail, .habits #btn-detail {
+      color: #dba44c; }
+
+  #news {
+    margin-top: 0px; }
+
+  ul.navbar-nav {
+    margin: 0px;
+    border: 0px;
+    width: 100%;
+    color: white; }
+
+  .navbar-collapse {
+    padding: 0px; }
+
+  .collapsing {
+    width: 100%;
+    border: 0px; }
+
+  .navbar-nav > li {
+    border-top: 1px solid silver;
+    height: 80px;
+    width: 100%; }
+    .navbar-nav > li:hover {
+      background-color: #dba44c; }
+
+  .container-form {
+    padding: 0px 20px 0px 20px; } }
+footer {
+  text-align: center;
+  font-size: 15px;
+  height: 100px;
+  margin-top: 20px;
+  padding-top: 60px;
+  background-color: #3673b0;
+  display: block; }
+
+/*# sourceMappingURL=main.css.map */
