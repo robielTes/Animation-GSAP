@@ -1,186 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<title>CPNV-ES Informatique Developpement</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CPNV-ES Informatique Developpement</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-<style>
-
-body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #f5f6f7;
-}
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 
-p {
-    font-size: 15px;
-    text-align: justify;
-    padding:10px;
-}
-
-#titre {padding-bottom: 20px;}
-
-.bg-1 {
-    position:relative;
-    background-color: rgb(207, 44, 38);
-    background-position: left center;
-    color: #ffffff;
-    padding:30px;
-    }
-
-#block-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    }
-
-
-.bg-info {
-    width:auto;
-    background-size:     cover;
-    background-repeat:   no-repeat;
-    background-position: top center;
-    }
-
-.bg-3 {
-    background-color: #ffffff;
-    color: #555555;
-}
-
-.bg-4 {
-    background-color: #2f2f2f;
-    color: #fff;
-}
-
-.container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.box{
-    box-sizing: border-box;
-    overflow:hidden;
-    background:#efefef;
-    padding:20px;
-    border:10px solid white;
-    height:450px;
-
-}
-
-.box h3{
-  text-align:left;
-  padding-left:10px;
-}
-
-.box:hover >img{opacity:0.9;}
-
-.box > img{
-    position:absolute;
-    width:100%;
-    top:250px;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
-    opacity:1;
-
-}
-
-
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 20px;
-    letter-spacing: 5px;
-}
-
-.navbar-nav  li a:hover {
-      color: black !important;
-  }
-
-
-.planf{
-      color:dimgray;
-      width:100%;
-      display:none;
-     }
-
-.trimestre{
-     padding:10px;
-  }
-
-.module{
-     background-color: rgb(207, 44, 38);
-      color:white;
-      height:100px;
-      display:block;
-      border:1px solid #938976;
-      padding:10px;
-  }
-
-.module:hover{
-      background:#938976;
-  }
-
-.stage{
-       background:#938976;
-       height:400px;
-  }
-
-</style>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+        
+        p {
+            font-size: 15px;
+            text-align: justify;
+            padding: 10px;
+        }
+        
+        #titre {
+            padding-bottom: 20px;
+        }
+        
+        .bg-1 {
+            position: relative;
+            background-color: rgb(207, 44, 38);
+            background-position: left center;
+            color: #ffffff;
+            padding: 30px;
+        }
+        
+        #block-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .bg-info {
+            width: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+        
+        .bg-3 {
+            background-color: #ffffff;
+            color: #555555;
+        }
+        
+        .bg-4 {
+            background-color: #2f2f2f;
+            color: #fff;
+        }
+        
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        
+        .box {
+            box-sizing: border-box;
+            overflow: hidden;
+            background: #efefef;
+            padding: 20px;
+            border: 10px solid white;
+            height: 450px;
+        }
+        
+        .box h3 {
+            text-align: left;
+            padding-left: 10px;
+        }
+        
+        .box:hover>img {
+            opacity: 0.9;
+        }
+        
+        .box>img {
+            position: absolute;
+            width: 100%;
+            top: 250px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 1;
+        }
+        
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+        
+        .navbar-nav li a:hover {
+            color: black !important;
+        }
+        
+        .planf {
+            color: dimgray;
+            width: 100%;
+            display: none;
+        }
+        
+        .trimestre {
+            padding: 10px;
+        }
+        
+        .module {
+            background-color: rgb(207, 44, 38);
+            color: white;
+            height: 100px;
+            display: block;
+            border: 1px solid #938976;
+            padding: 10px;
+        }
+        
+        .module:hover {
+            background: #938976;
+        }
+        
+        .stage {
+            background: #938976;
+            height: 400px;
+        }
+        
+        #screengauche {
+            visibility: hidden;
+        }
+        
+        #screencentre {
+            visibility: hidden;
+        }
+        
+        #screendroite {
+            visibility: hidden;
+        }
+    </style>
 </head>
+
 <body>
 
 
-<!-- Navbar -->
+    <!-- Navbar -->
 
-<nav class="navbar navbar-default">
-  <div class="contaiiner">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <nav class="navbar navbar-default">
+        <div class="contaiiner">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img id="logo" src="imgs/logo-cpnv.svg" height="250%"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
+                <a class="navbar-brand" href="#"><img id="logo" src="imgs/logo-cpnv.svg" height="250%"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
 
-          <li><a href="#">FORMATIONS</a></li>
-        <li><a href="#">ENTREPRISES</a></li>
-           <li><a href="#">INSCRIPTION</a></li>
+                    <li><a href="#">FORMATIONS</a></li>
+                    <li><a href="#">ENTREPRISES</a></li>
+                    <li><a href="#">INSCRIPTION</a></li>
 
-      </ul>
-    </div>
-  </div>
-</nav>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<div class="bg-info " ></div>
-
-
-<!-- Header -->
-
-<div class="bg-1 text-center" >
+    <div class="bg-info "></div>
 
 
-    <div id="block-header"></div>
+    <!-- Header -->
 
-    <svg version="1.1" id="codeAscreen" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-         y="0px" width="200px" height="150px" viewBox="-120 87.1 150 130"  xml:space="preserve">
+    <div class="bg-1 text-center">
+
+
+        <div id="block-header"></div>
+
+        <svg version="1.1" id="codeAscreen" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="150px" viewBox="-120 87.1 150 130" xml:space="preserve">
     <g id="formes" fill="none" stroke="white" stroke-width="4" stroke-linejoin="round">
-    <path id="codegauche" d="M-69.4,114.1l-4.4,2.9l-33.3,20.8l-3.9,2.3v17.7l3.9,2.3l33.3,20.8l4.4,2.9V164L-93.5,149l24.2-15.1
+    <path id="codegauche" stroke="white" d="M-69.4,114.1l-4.4,2.9l-33.3,20.8l-3.9,2.3v17.7l3.9,2.3l33.3,20.8l4.4,2.9V164L-93.5,149l24.2-15.1
         C-69.4,133.9-69.4,114.1-69.4,114.1z"/>
     <path id="codecentre" d="M-44.7,99.1L-61,197.5l-0.3,1.3h17.1l16.4-98.5l0.3-1.3C-27.5,99.1-44.7,99.1-44.7,99.1z"/>
     <path id="codedroite"  d="M-18.6,134L-18.6,134l24.2,15.1l-24.2,15.1v19.7l4.4-2.9L19,160.2l3.9-2.3v-17.7l-3.9-2.3l-33.3-20.8
@@ -202,171 +212,179 @@ p {
         V183.6z"/>
         </g>
     </svg>
+        <h2 id="titre">Technicien Informatique Option Développement</h2>
 
-
-<h2 id="titre" >Technicien Informatique Option Développement</h2>
-
-</div>
-
-
-<!-- Blocs Description -->
-
-<div class="container-fluid bg-3 text-center">
-
-
-
-  <div class="row" >
-    <div class="col-lg-4 col-md-6 col-sm-12 box">
-        <h3>Formation</h3>
-      <p>La formation de type modulaire à plein temps est répartie sur deux ans à plein temps, incluant un stage en entreprise de trois mois et se concluant par un travail de diplôme de 6 semaines, également en entreprise. </p><br>
-      <img src="imgs/develop.jpg" class="img-responsive margin">
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 box">
-         <h3>Stages en entreprise</h3>
-      <p>Au début de la 2ème année, les étudiants partent en entreprise pour un stage de perfectionnement professionnel d’une durée minimale de 11 semaines. </p>
-      <img src="imgs/develop.jpg" class="img-responsive margin">
+
+
+    <!-- Blocs Description -->
+
+    <div class="container-fluid bg-3 text-center">
+
+
+
+        <div class="row">
+            <div id="formation" class="col-lg-4 col-md-6 col-sm-12 box">
+                <h3>Formation</h3>
+                <p>La formation de type modulaire à plein temps est répartie sur deux ans à plein temps, incluant un stage en entreprise de trois mois et se concluant par un travail de diplôme de 6 semaines, également en entreprise. </p><br>
+                <img src="imgs/develop.jpg" class="img-responsive margin">
+            </div>
+            <div id="stage" class="col-lg-4 col-md-6 col-sm-12 box">
+                <h3>Stages en entreprise</h3>
+                <p>Au début de la 2ème année, les étudiants partent en entreprise pour un stage de perfectionnement professionnel d’une durée minimale de 11 semaines. </p>
+                <img src="imgs/develop.jpg" class="img-responsive margin">
+            </div>
+            <div id="branch" class="col-lg-4 col-md-6 col-sm-12 box">
+                <h3>Branches Techniques</h3>
+                <p>Lors du stage les étudiants peuvent y appliquer les connaissances et compétences acquises au cours de la 1ère année et y apprendre les fonctionnements internes et spécifiques au monde de l’entreprise.</p>
+                <img src="imgs/develop.jpg" class="img-responsive margin" alt="Image">
+            </div>
+        </div>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 box">
-        <h3>Branches Techniques</h3>
-      <p>Lors du stage les étudiants peuvent y appliquer les connaissances et compétences acquises au cours de la 1ère année et y apprendre les fonctionnements internes et spécifiques au monde de l’entreprise.</p>
-      <img src="imgs/develop.jpg" class="img-responsive margin" alt="Image">
-    </div>
-  </div>
-</div>
 
 
 
-<!-- Plan de foration -->
+    <!-- Plan de foration -->
 
-<div class="container-fluid bg-2 text-center planf">
-     <h3>Plan de formation - Technicien en informatique</h3>
+    <div class="container-fluid bg-2 text-center planf">
+        <h3>Plan de formation - Technicien en informatique</h3>
 
-    <div class="col-sm-3 trimestre">
+        <div class="col-sm-3 trimestre">
             <h4>Trimestre 1</h4>
-         <div class="module" id="i1a">
-             <p>Graphisme Bases</p>
-        </div>
+            <div class="module" id="i1a">
+                <p>Graphisme Bases</p>
+            </div>
             <div class="module" id="i1b">
-             <p>Linux WS</p>
-        </div>
+                <p>Linux WS</p>
+            </div>
             <div class="module" id="i1c">
-             <p>Html / CSS / JS </p>
-        </div>
+                <p>Html / CSS / JS </p>
+            </div>
             <div class="module" id="i1d">
-             <p>SQL</p>
+                <p>SQL</p>
+            </div>
         </div>
-    </div>
 
 
-    <div class="col-sm-3 trimestre">
+        <div class="col-sm-3 trimestre">
             <h4>Trimestre 2</h4>
-         <div class="module" id="i1a">
-             <p>Graphisme Interface</p>
-        </div>
+            <div class="module" id="i1a">
+                <p>Graphisme Interface</p>
+            </div>
             <div class="module" id="i1b">
-             <p>Linux Serveur</p>
-        </div>
+                <p>Linux Serveur</p>
+            </div>
             <div class="module" id="i1c">
-             <p>PHP </p>
-        </div>
+                <p>PHP </p>
+            </div>
             <div class="module" id="i1d">
-             <p>UML/GIT</p>
+                <p>UML/GIT</p>
+            </div>
         </div>
-    </div>
 
-    <div class="col-sm-3 trimestre">
+        <div class="col-sm-3 trimestre">
             <h4>Trimestre 3</h4>
-         <div class="module" id="i1a">
-             <p>XML</p>
-        </div>
+            <div class="module" id="i1a">
+                <p>XML</p>
+            </div>
             <div class="module" id="i1b">
-             <p>IIS / Apache</p>
-        </div>
+                <p>IIS / Apache</p>
+            </div>
             <div class="module" id="i1c">
-             <p>Ajax / Rest / Soap </p>
-        </div>
+                <p>Ajax / Rest / Soap </p>
+            </div>
             <div class="module" id="i1d">
-             <p>ORM/MVC</p>
+                <p>ORM/MVC</p>
+            </div>
         </div>
-    </div>
 
-    <div class="col-sm-3 trimestre">
+        <div class="col-sm-3 trimestre">
             <h4>Trimestre 4</h4>
-         <div class="module" id="i1a">
-             <p>JAVA</p>
-        </div>
+            <div class="module" id="i1a">
+                <p>JAVA</p>
+            </div>
             <div class="module" id="i1b">
-             <p>Virtualisation Srv mutualisé</p>
-        </div>
+                <p>Virtualisation Srv mutualisé</p>
+            </div>
             <div class="module" id="i1c">
-             <p>Mobile (JS,PhoneGap) </p>
-        </div>
+                <p>Mobile (JS,PhoneGap) </p>
+            </div>
             <div class="module" id="i1d">
-             <p>Design Patterns</p>
+                <p>Design Patterns</p>
+            </div>
         </div>
-    </div>
 
 
 
-    <div class="col-sm-3 trimestre">
+        <div class="col-sm-3 trimestre">
             <h4>Trimestre 5</h4>
-         <div class="module stage" id="i1a">
-             <p>STAGE</p>
+            <div class="module stage" id="i1a">
+                <p>STAGE</p>
+            </div>
         </div>
-    </div>
 
 
-    <div class="col-sm-3 trimestre" >
+        <div class="col-sm-3 trimestre">
             <h4>Trimestre 6</h4>
-         <div class="module" id="i1a">
-             <p>Graphisme Interface</p>
-        </div>
+            <div class="module" id="i1a">
+                <p>Graphisme Interface</p>
+            </div>
             <div class="module" id="i1b">
-             <p>Linux Serveur</p>
-        </div>
+                <p>Linux Serveur</p>
+            </div>
             <div class="module" id="i1c">
-             <p>PHP </p>
-        </div>
+                <p>PHP </p>
+            </div>
             <div class="module" id="i1d">
-             <p>UML/GIT</p>
+                <p>UML/GIT</p>
+            </div>
         </div>
-    </div>
 
-    <div class="col-sm-3 trimestre" >
+        <div class="col-sm-3 trimestre">
             <h4>Trimestre 7</h4>
-         <div class="module" id="i1a">
-             <p>XML</p>
-        </div>
+            <div class="module" id="i1a">
+                <p>XML</p>
+            </div>
             <div class="module" id="i1b">
-             <p>IIS / Apache</p>
-        </div>
+                <p>IIS / Apache</p>
+            </div>
             <div class="module" id="i1c">
-             <p>Ajax / Rest / Soap </p>
-        </div>
+                <p>Ajax / Rest / Soap </p>
+            </div>
             <div class="module" id="i1d">
-             <p>ORM/MVC</p>
+                <p>ORM/MVC</p>
+            </div>
         </div>
-    </div>
 
-    <div class="col-sm-3 trimestre" >
+        <div class="col-sm-3 trimestre">
             <h4>Trimestre 8</h4>
-         <div class="module stage" id="i1a">
-             <p>Travail de diplôme</p>
+            <div class="module stage" id="i1a">
+                <p>Travail de diplôme</p>
+            </div>
+
         </div>
+
 
     </div>
 
+    <!-- Footer -->
 
-</div>
+    <footer class="container-fluid bg-4 text-center">
 
-<!-- Footer -->
-
-<footer class="container-fluid bg-4 text-center">
-
-</footer>
+    </footer>
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+    <script src="scripts/TweenMax.min.js" defer></script>
+    <script src="scripts/plugins/MorphSVGPlugin.min.js" defer></script>
+    <script src="scripts/plugins/DrawSVGPlugin.min.js" defer></script>
+    <script src="scripts/utils/SplitText.min.js" defer></script>
+    <script src="scripts/animation.gsap.min.js" defer></script>
+    <script src="scripts/TweenLite.min.js" defer></script>
+
+    <script src="app.js" defer></script>
 
 </body>
+
 </html>
